@@ -1,0 +1,8 @@
+Tarefa,Tipo,Dado
+Abrir navegador,click,iconeNavegador
+Esperar navegador abrir,espera,3
+Digitar site,texto,https://www.google.com
+Esperar carregamento,espera,2
+Pressionar Enter,tecla,enter
+
+
