@@ -4,7 +4,7 @@ import time
 from openpyxl import Workbook
 
 def clicar (iconeNavegador):
-    # Localiza o ícone na tela e clica nele
+
     pyautogui.click(pyautogui.locateOnScreen(f'{iconeNavegador}.png'))
 
 def digitar(texto):
@@ -17,7 +17,7 @@ def esperar(segundos):
     time.sleep(segundos)
 
 def ler_arquivo(tarefas):
-    # Lê o arquivo CSV com as tarefas
+  
     return pd.read_csv(tarefas)
 
 def executar_tarefas(df):
@@ -31,7 +31,7 @@ def executar_tarefas(df):
             if tipo == 'click':
                 clicar(dado)
             elif tipo == 'texto':
-                digitar(dado)  # <-- agora sempre digita, mesmo se for uma URL
+                digitar(dado) 
             elif tipo == 'tecla':
                 pressionar_tecla(dado)
             elif tipo == 'espera':
@@ -55,15 +55,14 @@ def gerar_relatorio(tarefas_executadas):
     wb.save("relatorio_tarefas.xlsx")
 
 def main():
-    # Lê o arquivo CSV
+  
     df = ler_arquivo('tarefas.csv')
     
-    # Executa as tarefas e captura os resultados
+  
     tarefas_executadas = executar_tarefas(df)
     
-    # Gera o relatório de execução
+  
     gerar_relatorio(tarefas_executadas)
 
-# Executa o programa
 if __name__ == "__main__":
     main()
