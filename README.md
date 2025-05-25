@@ -1,4 +1,4 @@
-# Projeto de RPA – AP02
+# AP02 – Extração de Dados, Armazenamento e Relatório
 
 Este projeto é parte da Avaliação Prática 02 da disciplina de Robotic Process Automation (RPA). Ele realiza extração de dados de uma API, scraping de um site de livros e geração de um relatório em Excel com os dados processados.
 
