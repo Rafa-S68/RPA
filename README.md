@@ -25,16 +25,19 @@ Este projeto é parte da Avaliação Prática 02 da disciplina de Robotic Proces
 
 ## 📁 Estrutura
 
-📁 dados/
+- 📁 dados/
+  
 ├── paises.db
 └── livraria.db
-📁 relatorios/
+
+- 📁 relatorios/
 └── relatorio_final.xlsx
-main.py
-extracao_paises.py
-webscraping_livros.py
-relatorio.py
-requirements.txt
+
+- main.py
+- extracao_paises.py
+- webscraping_livros.py
+- relatorio.py
+- requirements.txt
 
 
 
@@ -45,12 +48,13 @@ requirements.txt
 1. Clone o repositório:
 
 ```bash
+
 git clone https://github.com/Rafa-S68/RPA.git
 cd RPA
 
-## Instale os pacotes necessários:
+ ## Instale os pacotes necessários:
 
-pip install -r requirements.txt
+ pip install -r requirements.txt
 
 ## Ou Execute o script principal: 
 
@@ -58,6 +62,7 @@ python main.py
 
 
 📌 Observações
+
 O relatório gerado será salvo automaticamente em relatorios/relatorio_final.xlsx.
 
 Certifique-se de ter conexão com a internet para a extração via API.
